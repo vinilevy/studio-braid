@@ -122,10 +122,14 @@ if ($ffmpegCmd) {
 
 # 4. Instalar dependências e compilar
 Write-Step "Instalando dependências do projeto..."
-if (Test-Path "package-lock.json") {
-    & npm install
-} else {
-    & npm install
+# O frontend (web/) tem package.json proprio e nao faz parte dos workspaces da raiz
+foreach ($dir in @(".", "web")) {
+    & npm --prefix $dir install
+    if ($LASTEXITCODE -ne 0) {
+        Write-Err "Falha ao instalar dependências em '$dir'."
+        Pause
+        Exit 1
+    }
 }
 Write-Success "Dependências instaladas."
 

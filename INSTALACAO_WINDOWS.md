@@ -20,7 +20,7 @@ git clone https://github.com/vinilevy/studio-braid.git "$env:USERPROFILE\StudioB
 
 1. **Instala o Node.js LTS** (caso não esteja instalado).
 2. **Instala o FFmpeg e FFprobe** (caso não estejam no sistema).
-3. **Instala todas as dependências** do Studio Braid (`npm install`).
+3. **Instala todas as dependências** do Studio Braid (`npm install` na raiz e em `web/`).
 4. **Compila o sistema** (`npm run build`).
 5. **Cria o ícone na Área de Trabalho** (**Studio Braid**):
    - Ao clicar, ele abre o sistema direto no seu navegador sem abrir nenhuma tela preta ou terminal.
