@@ -25,7 +25,8 @@ function Write-Err {
 }
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ProjectRoot = Split-Path -Parent $ScriptDir
+# install.ps1 fica em scripts\windows: a raiz do projeto esta dois niveis acima
+$ProjectRoot = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 Set-Location $ProjectRoot
 
 Write-Host @"
