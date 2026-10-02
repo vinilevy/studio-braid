@@ -1,0 +1,26 @@
+{
+  "name": "@screen-studio-bridge/qa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Auditoria adversária do Screen Studio Bridge: mocks, verificação de mídia/sincronismo e de FCPXML.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "mock": "tsx create-mock-bundle.ts",
+    "verify:export": "tsx verify-export.ts",
+    "verify:fcpxml": "tsx verify-fcpxml.ts",
+    "verify": "tsx run-regression.ts",
+    "selftest": "tsx selftest/run-selftest.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2",
+    "yauzl": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/yauzl": "^2.10.3",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}

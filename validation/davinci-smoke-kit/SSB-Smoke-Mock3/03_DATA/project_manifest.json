@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Mock 3 sessões ss4 — Aula Ação",
+  "inputPath": "/Users/viniciuslevi/Documents/EXPORTAR VIDEO/tests/fixtures/generated/m3/Mock 3 sessões ss4 — Aula Ação.screenstudio",
+  "generatedAt": "2026-10-02T01:00:35.005Z",
+  "pausePolicy": "remove-wall-clock-pauses",
+  "timelineDurationMs": 15234.517,
+  "metadataDurationMs": 15234.521,
+  "sessionCount": 3,
+  "media": [
+    {
+      "kind": "display",
+      "file": "01_MEDIA/SCREEN.mp4",
+      "durationMs": 15234.517,
+      "codec": "h264"
+    },
+    {
+      "kind": "webcam",
+      "file": "01_MEDIA/CAMERA.mp4",
+      "durationMs": 15234.517,
+      "codec": "h264"
+    },
+    {
+      "kind": "microphone",
+      "file": "01_MEDIA/MICROPHONE.wav",
+      "durationMs": 15234.521,
+      "codec": "pcm_s24le"
+    },
+    {
+      "kind": "systemAudio",
+      "file": "01_MEDIA/SYSTEM_AUDIO.wav",
+      "durationMs": 15234.521,
+      "codec": "pcm_s24le"
+    }
+  ],
+  "fcpxml": "02_DAVINCI/Mock 3 sessões ss4 — Aula Ação.fcpxml",
+  "missingTracks": [],
+  "ffmpegVersion": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "ffprobeVersion": "ffprobe version 9.0.2 Copyright (c) 2007-2026 the FFmpeg developers"
+}

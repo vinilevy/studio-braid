@@ -1,0 +1,22 @@
+{
+  "name": "@screen-studio-bridge/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js"
+    }
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.3",
+    "yauzl": "^3.4.0",
+    "zod": "^4.6.5"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "@screen-studio-bridge/cli", "version": "0.1.0", "type": "module",
+  "bin": {"bridge-cli": "bin/bridge-cli.mjs"}, "dependencies": {"@screen-studio-bridge/core": "0.1.0"}
+}

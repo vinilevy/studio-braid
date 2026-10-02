@@ -1,0 +1,14 @@
+node_modules/
+**/dist/
+*.tsbuildinfo
+.DS_Store
+.bridge-*/
+tests/fixtures/generated/
+tests/output/
+web/output/
+validation/exports/
+validation/*.zip
+bin/
+*.log
+Thumbs.db
+desktop.ini

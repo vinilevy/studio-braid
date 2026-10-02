@@ -1,0 +1,12 @@
+{
+  "name": "@screen-studio-bridge/server",
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "@fastify/multipart": "^10.1.2",
+    "@fastify/static": "^10.1.5",
+    "@screen-studio-bridge/core": "0.1.0",
+    "fastify": "^5.12.5",
+    "zod": "^4.6.5"
+  }
+}

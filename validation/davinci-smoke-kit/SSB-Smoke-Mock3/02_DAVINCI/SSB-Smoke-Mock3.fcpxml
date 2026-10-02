@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.10">
+  <resources>
+    <format id="f1" name="SCREEN.mp4" frameDuration="1/60s" width="640" height="360"/>
+    <format id="f2" name="CAMERA.mp4" frameDuration="1/25s" width="320" height="180"/>
+    <asset id="a1" name="SCREEN.mp4" start="0s" duration="15234517/1000000s" hasVideo="1" format="f1">
+      <media-rep kind="original-media" src="../01_MEDIA/SCREEN.mp4"/>
+    </asset>
+    <asset id="a2" name="CAMERA.mp4" start="0s" duration="15234517/1000000s" hasVideo="1" format="f2">
+      <media-rep kind="original-media" src="../01_MEDIA/CAMERA.mp4"/>
+    </asset>
+    <asset id="a3" name="MICROPHONE.wav" start="0s" duration="15234521/1000000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <media-rep kind="original-media" src="../01_MEDIA/MICROPHONE.wav"/>
+    </asset>
+    <asset id="a4" name="SYSTEM_AUDIO.wav" start="0s" duration="15234521/1000000s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+      <media-rep kind="original-media" src="../01_MEDIA/SYSTEM_AUDIO.wav"/>
+    </asset>
+  </resources>
+  <library>
+    <event name="Screen Studio Bridge">
+      <project name="Mock 3 sessões ss4 — Aula Ação">
+        <sequence format="f1" duration="15234517/1000000s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <asset-clip name="SCREEN.mp4" ref="a1" offset="0s" start="0s" duration="15234517/1000000s" format="f1">
+              <asset-clip name="CAMERA.mp4" ref="a2" lane="1" offset="0s" start="0s" duration="15234517/1000000s" format="f2"/>
+              <asset-clip name="MICROPHONE.wav" ref="a3" lane="-1" offset="0s" start="0s" duration="15234521/1000000s" audioRole="dialogue"/>
+              <asset-clip name="SYSTEM_AUDIO.wav" ref="a4" lane="-2" offset="0s" start="0s" duration="15234521/1000000s" audioRole="effects"/>
+            </asset-clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
