@@ -1,4 +1,4 @@
-# ==============================================================================
+﻿# ==============================================================================
 # Studio Braid - Instalador Automatizado para Windows
 # ==============================================================================
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -11,7 +11,7 @@ function Write-Step {
 
 function Write-Success {
     param([string]$Message)
-    Write-Host "    ✓ $Message" -ForegroundColor Green
+    Write-Host "    [OK] $Message" -ForegroundColor Green
 }
 
 function Write-Warn {
@@ -21,7 +21,7 @@ function Write-Warn {
 
 function Write-Err {
     param([string]$Message)
-    Write-Host "    ✗ $Message" -ForegroundColor Red
+    Write-Host "    [X] $Message" -ForegroundColor Red
 }
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -180,7 +180,7 @@ Start-Process "wscript.exe" -ArgumentList "`"$LauncherVbs`""
 Write-Host @"
 
 ======================================================================
-               🎉 INSTALAÇÃO CONCLUÍDA COM SUCESSO!
+               INSTALAÇÃO CONCLUÍDA COM SUCESSO!
 ======================================================================
 1. O Studio Braid foi iniciado e a interface abriu no seu navegador!
 2. Sempre que você ligar o computador, ele abrirá sozinho.
