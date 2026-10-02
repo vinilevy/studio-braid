@@ -12,3 +12,7 @@ bin/
 *.log
 Thumbs.db
 desktop.ini
+
+# Permite explicitamente arquivos de ambiente (.env)
+!.env
+!.env.*
